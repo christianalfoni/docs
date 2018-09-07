@@ -39,7 +39,7 @@ The four different ways to use the `now alias` command are:
 3. <InternalLink href="#3.-using-a-custom-domain,-dns-managed-by-now">Using a custom domain, DNS managed by now</InternalLink>
 4. <InternalLink href="#4.-using-a-custom-domain-with-a-cname">Using a custom domain with a CNAME</InternalLink>
 
-Let us explore each method in detail.
+Let us explore each method in detail. Note that the routing of the **www** subdomain is handled by redirection, explained [here](https://zeit.co/docs/guides/redirect).
 
 > Custom domains are only available for [paid plans](https://zeit.co/pricing). If you want to use a custom domain for your app, you need to [upgrade](https://zeit.co/account/plan) your account.
 

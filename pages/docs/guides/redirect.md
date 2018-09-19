@@ -31,16 +31,13 @@ It will do the job, but search engines consider them as **duplicate** content. T
 
 Therefore, `www` redirect is the best option. There are two ways to achieve that for your app.
 
-## 1. Using now-examples/redirect
+## 1. Deploy a Now redirect application
 
-Now we are going to deploy a [simple web app](https://github.com/now-examples/redirect) which receives all the `www` traffic and redirect them to your naked domain.
-
-To deploy this, run the following command:<br/>
-(Make sure to add a trailing slash to the redirect URL as shown below.)
+By running the following command you are deploying [a generic application](https://github.com/now-examples/redirect) from Now that redirects the traffic from `www` to your naked domain, so make sure you change out the `REDIRECT_URL` value. Also make sure to add a trailing slash to the redirect URL as shown below.
 
 <TerminalInput>now -e REDIRECT_URL=https://mycompany.com/ now-examples/redirect</TerminalInput>
 
-Then, you will get a deployment URL like this: `https://now-redirect-otytioldup.now.sh`.
+Then, you will get a deployment URL looking something like this: `https://now-redirect-otytioldup.now.sh`.
 
 Now, alias that into your `www` domain like this:
 
@@ -48,7 +45,7 @@ Now, alias that into your `www` domain like this:
 
 Now, all the `www` traffic will be forwarded to your naked domain (in this case `mycompany.com`).
 
-> You only need to deploy this app once. 
+> You only need to deploy this redirect application from Now once
 
 
 ## 2. Redirect Inside Your App
